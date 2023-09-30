@@ -31,6 +31,11 @@ namespace ConsoleApp2
             // classGeneric<string> generic = new classGeneric<string>() { code = "string" };
             // classGeneric<Department> department = new classGeneric<Department>();
             //   List<int> vs = new List<int>() { 44,455,44,11,22  };
+
+            //Department department = new Department() { DepartmentName = "doctor" };
+            //List<Department> data = new List<Department>();
+            //data.Add(department);
+            //Console.WriteLine("success");
             #endregion
 
 
