@@ -9,5 +9,10 @@ namespace Console_Application
     class classGeneric<td>
     {
         public td code { get; set; }
+
+        public void myMethod(IEnumerable<int> data)
+        {
+
+        }
     }
 }

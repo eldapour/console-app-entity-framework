@@ -33,10 +33,19 @@ namespace ConsoleApp2
             //   List<int> vs = new List<int>() { 44,455,44,11,22  };
 
             //Department department = new Department() { DepartmentName = "doctor" };
-            //List<Department> data = new List<Department>();
+            //List<int> data = new List<int>() { 2,5,6,47,9,44 };
+            //int[] arr = new int[] { 1, 2, 3, 4, 6, 8 };
+            //classGeneric<int> enumerable = new classGeneric<int>();
+            //enumerable.myMethod(data);
             //data.Add(department);
+
+
+
             //Console.WriteLine("success");
             #endregion
+
+
+
 
 
             Console.ReadKey();
