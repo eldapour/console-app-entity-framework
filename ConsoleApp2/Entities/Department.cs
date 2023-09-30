@@ -10,6 +10,5 @@ namespace Console_Application.Entities
     {
         public int Id { get; set; }
         public string DepartmentName { get; set; }
-        public int MyProperty { get; set; }
     }
 }

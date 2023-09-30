@@ -8,9 +8,17 @@ using System.Threading.Tasks;
 
 namespace Console_Application.database
 {
-    class dbContainer
+    class Context:DbContext
     {
         public DbSet<Department> Departments { get; set; }
         public DbSet<Employee> Employees { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+
+            optionsBuilder.UseSqlServer("server=DESKTOP-US9JT4L;database=dbtest;Integrated security=true");
+        }
+
+
     }
 }
