@@ -10,21 +10,14 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            #region add to db
-            //Department department = new Department();
-
-            //Console.WriteLine("----------------------------------------------");
-            //Console.WriteLine("welcome to company system");
-            //Console.WriteLine("----------------------------------------------");
-            //Console.WriteLine("please enter department");
-            //department.DepartmentName = Console.ReadLine();
-
-            //Context db = new Context();
-            //db.Departments.Add(department);
-            //db.SaveChanges();
-
-            //Console.WriteLine("Save Successfully !");
-            #endregion
+            string answer;
+   
+            do
+            {
+                addDepartmet();
+                Console.Write("Enter another department (y/n)? ");
+                answer = Console.ReadLine();
+            } while (answer == "y"); 
 
 
             #region Class Generic
@@ -49,6 +42,25 @@ namespace ConsoleApp2
 
 
             Console.ReadKey();
+        }
+
+        public static void addDepartmet()
+        {
+            #region add to db
+            Department department = new Department();
+
+            Console.WriteLine("----------------------------------------------");
+            Console.WriteLine("welcome to company system");
+            Console.WriteLine("----------------------------------------------");
+            Console.WriteLine("please enter department");
+            department.DepartmentName = Console.ReadLine();
+
+            Context db = new Context();
+            db.Departments.Add(department);
+            db.SaveChanges();
+
+            Console.WriteLine("Save Successfully !");
+            #endregion
         }
     }
 }
