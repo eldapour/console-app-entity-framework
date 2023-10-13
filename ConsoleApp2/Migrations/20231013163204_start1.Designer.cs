@@ -3,14 +3,16 @@ using Console_Application.database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Console_Application.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class dbContainerModelSnapshot : ModelSnapshot
+    [Migration("20231013163204_start1")]
+    partial class start1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

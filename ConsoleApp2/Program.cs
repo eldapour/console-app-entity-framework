@@ -3,6 +3,7 @@ using Console_Application.database;
 using Console_Application.Entities;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ConsoleApp2
 {
@@ -10,14 +11,42 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            string answer;
-   
-            do
-            {
-                addDepartmet();
-                Console.Write("Enter another department (y/n)? ");
-                answer = Console.ReadLine();
-            } while (answer == "y"); 
+
+            //string answer;
+            //do
+            //{
+            //    addDepartmet();
+            //    Console.Write("Enter another department (y/n)? ");
+            //    answer = Console.ReadLine();
+            //} while (answer == "y"); 
+
+
+            //int[] num = new int[] {55,22,65,41,23,13};
+
+            //var data = num.Where(x => x < 30);
+
+            //foreach (var item in data)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+
+            Context db = new Context();
+
+            // Query Syntax
+            //var data = from department in db.Departments
+            //           select department;
+
+            // Method Syntax
+
+
+
+            //foreach (var item in data)
+            //{
+            //    Console.WriteLine(item.Id + "-----" + item.DepartmentName);
+            //}
+
+           
 
 
             #region Class Generic
