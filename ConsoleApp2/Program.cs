@@ -1,8 +1,6 @@
-﻿using Console_Application;
-using Console_Application.database;
+﻿using Console_Application.database;
 using Console_Application.Entities;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace ConsoleApp2
@@ -35,18 +33,22 @@ namespace ConsoleApp2
 
             // Query Syntax
             //var data = from department in db.Departments
+            //           where department.Id > 2
             //           select department;
 
-            // Method Syntax
 
+            // Method Syntax
+            //var data = db.Departments.Where(data => data.Id > 2)
+            //                        .OrderBy(data => data.DepartmentName)
+            //                        .Select(data => new { data.DepartmentName});
 
 
             //foreach (var item in data)
             //{
-            //    Console.WriteLine(item.Id + "-----" + item.DepartmentName);
+            //    Console.WriteLine(item.DepartmentName);
             //}
 
-           
+
 
 
             #region Class Generic
